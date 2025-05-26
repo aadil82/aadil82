@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_aadil82_aadil82_1748274898761
+  name: Build aadil82
+  orgIdentifier: default
+  projectIdentifier: New_Project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1748270206782
+        repoName: aadil82/aadil82
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI

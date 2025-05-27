@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_aadil82_aadil82_1748326798852-push-trigger-input-set
+  identifier: Build_aadil82_aadil82_1748326798852pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Testproject
+  pipeline:
+    identifier: Build_aadil82_aadil82_1748326798852
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

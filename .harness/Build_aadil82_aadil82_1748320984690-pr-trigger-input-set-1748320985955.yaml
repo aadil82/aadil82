@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_aadil82_aadil82_1748320984690-pr-trigger-input-set
+  identifier: Build_aadil82_aadil82_1748320984690prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: New_Project
+  pipeline:
+    identifier: Build_aadil82_aadil82_1748320984690
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
